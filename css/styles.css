@@ -23,12 +23,23 @@
   background: var(--accent-color);
 }
 
-.header,
+/*.header,*/
 .section-feature-item,
 .section-services-item,
 .section-team-item,
 .section-filters-item {
   display: flex;
+}
+
+li {
+  list-style-type: none; /* Убираем маркеры */
+}
+ul {
+  padding-left: 0; /* Сдвигаем список влево */
+}
+
+a {
+  text-decoration: none; /* Убираем подчёркивание */
 }
 
 /*==========END COMPONENTS==========*/
@@ -41,7 +52,21 @@
   font-size: 26px;
   line-height: 1.193;
   letter-spacing: 0.03em;
+  /*position: absolute;*/
+  width: 145px;
+  height: 31px;
+  left: 215px;
+  top: 24px;
+  margin-bottom: 25px;
+  margin-top: 24px;
 }
+
+.header-nav-list {
+  margin-left: 0px;
+  margin-bottom: 32px;
+  margin-top: 32px;
+}
+
 .header-nav-list-link {
   font-family: Roboto;
   font-weight: 500;
@@ -49,6 +74,13 @@
   line-height: 1.143;
   letter-spacing: 0.02em;
   color: #212121;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.header-nav-list-link_active {
+  color: #2196f3;
 }
 
 .address-mail,
@@ -65,11 +97,11 @@
 /*=====HERO=====*/
 
 .hero {
-  /*position: absolute;
+  /*position: absolute;*
   width: 1600px;
-  height: 600px;
+  height: 600px;*/
   left: 0px;
-  top: 80px;*/
+  top: 80px;
   background: #2f303a;
 }
 
@@ -82,6 +114,7 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+  padding-bottom: 30px;
 }
 
 .modal-btn {
@@ -108,6 +141,9 @@
 }
 /*=====END HERO=====*/
 /*=====FEATURE=====*/
+.section-feature-list {
+  margin-right: 30px;
+}
 .section-feature-title {
   font-family: Roboto;
   font-weight: bold;
@@ -129,6 +165,9 @@
 
 /*=====END FEATURE=====*/
 /*=====SERVICES=====*/
+.section-services-list {
+  margin-right: 30px;
+}
 
 .section-services-title {
   font-family: Roboto;
@@ -153,6 +192,10 @@
 /*=====SECTION TEAM=====*/
 .section-team {
   background: #f5f4fa;
+}
+
+.section-team-list {
+  margin-right: 30px;
 }
 
 .section-team-title {
@@ -219,15 +262,15 @@
   height: 1360px;
   left: 215px;
   top: 174px;
-}
+}*/
 
 .section-filters-item {
-  position: absolute;
-  width: 611px;
-  height: 54px;
-  left: 495px;
-  top: 174px;
-}*/
+  margin-bottom: 20px;
+}
+
+.filters-modal-btn_active {
+  background-color: #2196f3;
+}
 
 .filters-modal-btn {
   font-family: Roboto;
@@ -241,6 +284,12 @@
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 22px;
+  padding-left: 22px;
+  margin-right: 8px;
+  margin-bottom: 50px;
 }
 .filters-modal-btn:hover,
 .filters-modal-btn:focus {
@@ -249,7 +298,9 @@
 
 /*=====END FILTERS=====*/
 /*=====PROJECTS=====*/
-
+.projects-list {
+  margin-right: 30px;
+}
 .projects-item {
   display: flex;
   flex-wrap: wrap;
